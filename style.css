@@ -1,0 +1,43 @@
+*{
+ 	padding: 0px;
+ 	margin: 0px;
+ }
+
+#main {
+	width: 395px;
+	background: blue;
+}
+.empty{
+	margin: 5px;
+	width: 120px;
+	height: 120px;
+	background: white;
+	float: left;
+	list-style: none;
+}
+.circle{
+	margin: 5px;
+	width: 120px;
+	height: 120px;
+	background: white;
+	float: left;
+	list-style: none;
+}
+.square{
+	margin: 5px;
+	width: 120px;
+	height: 120px;
+	background: white;
+	float: left;
+	list-style: none;
+}
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#reset{
+	position: absolute;
+    left: 150px;
+    top: 400px;
+}

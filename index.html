@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title> script</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+	<div id="app">
+    <div id="main">
+        <ul>
+          <li v-for="box in boxes">
+            <div v-if="box.val === 'x'">
+              <input type="button" name="" class="cross">            
+            </div> 
+            <div v-else-if="box.val ==='o'">
+              <input type="button" name="" class="cicle">
+            </div>
+            <div v-else>
+              <input type="button" name="" class="empty">
+            </div>
+
+           </li>
+        </ul>
+
+   
+
+
+    </div>
+
+    <button id="reset">Начать заново</button>
+  </div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="script.js"></script>
+</html>
