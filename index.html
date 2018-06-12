@@ -10,27 +10,23 @@
 <body>
 	<div id="app">
     <div id="main">
-        <ul>
+        <ul id="list">
           <li v-for="box in boxes">
-            <div v-if="box.val === 'x'">
+            <template v-if="box.val === 'x'">
               <input type="button" name="" class="cross">            
-            </div> 
-            <div v-else-if="box.val ==='o'">
-              <input type="button" name="" class="cicle">
-            </div>
-            <div v-else>
-              <input type="button" name="" class="empty">
-            </div>
+            </template> 
+            <template v-else-if="box.val ==='o'">
+              <input type="button" name="" class="circle">
+            </template>
+            <template v-else>
+              <input type="button" name="" class="empty" @click = "pick(box.num)">
+            </template>
 
            </li>
         </ul>
-
-   
-
-
     </div>
-
-    <button id="reset">Начать заново</button>
+    {{clicks}}
+    <button id="reset" @click="resetVal">Начать заново</button>
   </div>
 
 

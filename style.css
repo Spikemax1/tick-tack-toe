@@ -13,25 +13,24 @@
 	height: 120px;
 	background: white;
 	float: left;
-	list-style: none;
 }
 .circle{
 	margin: 5px;
 	width: 120px;
 	height: 120px;
 	background: white;
+	background-image: url('images/circle.png');
 	float: left;
-	list-style: none;
 }
-.square{
+.cross{
 	margin: 5px;
 	width: 120px;
 	height: 120px;
-	background: white;
+	background-color: white;
+	background-image: url('images/cross.png');
 	float: left;
-	list-style: none;
 }
-.button:hover {
+.cross:hover, .circle:hover, .empty:hover {
     background-color: #4CAF50; /* Green */
     color: white;
 }
@@ -40,4 +39,7 @@
 	position: absolute;
     left: 150px;
     top: 400px;
+}
+ul{
+	list-style: none;
 }
