@@ -7,16 +7,19 @@
 
 <link rel="stylesheet" href="style.css">
 
-<body>
-	<div id="app">
+<body onload = 'app.resetVal()'>
+	 <div id="app">
     <div id="main">
         <ul id="list">
-          <li v-for="box in boxes">
+          <li v-for="box in boxes" v-bind:class="{active: isActive}">
             <template v-if="box.val === 'x'">
               <input type="button" name="" class="cross">            
             </template> 
             <template v-else-if="box.val ==='o'">
               <input type="button" name="" class="circle">
+            </template>
+            <template v-else-if="box.val ==='r'">
+              <input type="button" name="" class="rectangle">
             </template>
             <template v-else>
               <input type="button" name="" class="empty" @click = "pick(box.num)">
@@ -25,8 +28,8 @@
            </li>
         </ul>
     </div>
-    {{clicks}}
-    <button id="reset" @click="resetVal">Начать заново</button>
+    <button id="reset" @click="resetVal">Начать заново</button><br>
+    <h3>{{ winPlayer }}</h3>
   </div>
 
 

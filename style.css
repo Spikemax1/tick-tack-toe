@@ -4,21 +4,21 @@
  }
 
 #main {
-	width: 395px;
+	width: 700px;
 	background: blue;
 }
 .empty{
 	margin: 5px;
 	width: 120px;
 	height: 120px;
-	background: white;
+	background: #656565;
 	float: left;
 }
 .circle{
 	margin: 5px;
 	width: 120px;
 	height: 120px;
-	background: white;
+	background: #efebc4;
 	background-image: url('images/circle.png');
 	float: left;
 }
@@ -26,20 +26,32 @@
 	margin: 5px;
 	width: 120px;
 	height: 120px;
-	background-color: white;
+	background-color: #ffc1c1;
 	background-image: url('images/cross.png');
 	float: left;
 }
-.cross:hover, .circle:hover, .empty:hover {
+.rectangle{
+	margin: 5px;
+	width: 120px;
+	height: 120px;
+
+	background-color: #d5c7fb;
+	background-image: url('images/rectangle.png');
+	float: left;
+}
+.cross:hover, .rectangle:hover, .circle:hover, .empty:hover {
     background-color: #4CAF50; /* Green */
     color: white;
 }
 
 #reset{
 	position: absolute;
-    left: 150px;
-    top: 400px;
+    left: 270px;
+    top: 650px;
 }
 ul{
 	list-style: none;
+}
+.active{
+	pointer-events: none;
 }
